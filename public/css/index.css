@@ -1,0 +1,51 @@
+body {
+    margin-top : 50px;
+    /* max-width: max-content; */
+    background-image: url(../images/main-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    display: flex;
+}
+
+#hero-section {
+    width: 55%;
+    height: 500px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--white);
+    color: var(--white);
+    opacity: 0.3;
+    border: none;
+}
+
+#registration-form-section {
+    display: flex;
+    width: 35%;
+    height: 500px;
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    color: var(--primary-color);
+    opacity: 0.7;
+    border: none;
+    margin-right: 0px;
+    justify-content: center;
+}
+
+
+#reg-table {
+    border-spacing: 0 10px;
+}
+
+td button {
+    margin-left: 48%;
+    height: 30px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 20px;
+    padding: 0 15px;
+    font-size: medium;
+
+}
