@@ -22,7 +22,7 @@ main {
 
 #registration-form-section {
     display: flex;
-    width: 35%;
+    width: 20%;
     height: 500px;
     background-color: var(--white);
     border: 1px solid var(--white);
