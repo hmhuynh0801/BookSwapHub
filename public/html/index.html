@@ -11,8 +11,9 @@
 </head>
 <body>
     <header>
-        <img src="../images/logo.png" id="logo" alt="logo" />
-        <nav>
+        <!-- <img src="../images/logo.png" id="logo" alt="logo" /> -->
+        <h3 id="logo">BookSwapHub</h3>
+        <!-- <nav>
             <ul>
                 <li><a href="#"> Home </a></li>
                 <li><a href="#"> Find a book</a></li>
@@ -21,8 +22,8 @@
                 <li><a href="#"> Contacts</a></li>
                 <li><a href="#"> FAQ</a></li>
             </ul>
-        </nav>
-        <button id="login-btn">login</button>
+        </nav> -->
+        <button id="login-btn">Sign In</button>
     </header>
     <main>
         <section id="hero-section">
@@ -41,12 +42,12 @@
                         <td><input type="text" placeholder="Last name"></td>
                     </tr>
                     <tr>
-                        <td><input type="date" placeholder="DOB"></td>
+                        <td> Date of Birth: <input type="date" placeholder="DOB"></td>
                     </tr>
                     <tr>
                         <td><input type="text" placeholder="School Email"></td>
                     </tr>
-                    <tr id="signup">
+                    <tr>
                         <td><input type="text" placeholder="Student Id"></td>
                     </tr>
                     <tr>
@@ -62,8 +63,26 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="signup">
-                            <button type="submit" value="sign up">sign up</button>
+                        <td>
+                            <button type="submit" id="signup" value="sign up">sign up</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <form id="login-form" method="post" action="#">
+                <table> 
+                    <tr>
+                        <caption><h3>Login</h3></caption>
+                    </tr>
+                    <tr>
+                        <td><input type="email" placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" placeholder="Password"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit" id="signin" value="sign in">Sign In</button>
                         </td>
                     </tr>
                 </table>
@@ -73,5 +92,21 @@
     <footer>
         <span class="copright-span">&copy; copy rights</span>
     </footer>
+    <script src="../js/index.js">
+        // const loginButton = document.querySelector("#login-btn");
+        // const registrationForm = document.querySelector("#reg-form");
+        // const loginForm = document.querySelector("#login-form");
+        // loginForm.style.display = "none";
+        
+        // function hideRegisterationForm() {
+        //     registrationForm.style.display = 'None';
+        //     loginForm.style.display = 'block';
+        //     console.log(loginButton.innerText);
+        // }
+
+        // loginButton.addEventListener("click", hideRegisterationForm);
+
+        
+    </script>
 </body>
 </html>
