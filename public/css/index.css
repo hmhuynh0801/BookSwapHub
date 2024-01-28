@@ -12,7 +12,7 @@ main {
 
 #hero-section {
     width: 55%;
-    height: 500px;
+    /* height: 500px; */
     background-color: var(--primary-color);
     border: 1px solid var(--white);
     color: var(--white);
@@ -20,10 +20,18 @@ main {
     border: none;
 }
 
+/* #logo-img {
+    width: 200px;
+    height: 200px;
+    margin-top: 200px;
+    margin-left: 200px;
+    opacity: none;
+} */
+
 #registration-form-section {
     display: flex;
-    width: 20%;
-    height: 500px;
+    width: 33vw;
+    height: 90vh;
     background-color: var(--white);
     border: 1px solid var(--white);
     color: var(--primary-color);
@@ -33,17 +41,18 @@ main {
     justify-content: center;
 }
 
-#reg-form, #login-form {
-    margin-top: 80px;
-}
 
-#reg-table {
+#reg-table , #signin-table {
     border-spacing: 0 10px;
+    margin-top: 60px;
 }
 
+/* #login-form, #reg-form {
+    padding: 40px;
+} */
 
-td button {
-    margin-left: 48%;
+#signin-btn, #signup-btn {
+    margin-left: 65px;
     height: 30px;
     background-color: var(--primary-color);
     color: var(--white);
@@ -54,22 +63,26 @@ td button {
 
 }
 
-@media screen and (max-width: 1200px) {
+
+input[type="text"], input[type="password"], input[type="email"]{
+    width: 200px;
+    height: 30px;
+    border: 2px solid var(--primary-color);
+    border-radius: 7px;
+}
+
+@media screen and (max-width: 900px) {
     main {
         flex-direction: column-reverse;
-        align-items: center;
     }
 
-    #registration-form-section, #login-form {
-        margin: 0 auto;
-        margin-top: 100px;
-        width: auto;
-        padding: 20px;
-    }
     #hero-section {
         display: none;
     }
 
+    #registration-form-section {
+        width: 100vw;
+        margin: 0 auto;
+    }
+
 }
-
-
