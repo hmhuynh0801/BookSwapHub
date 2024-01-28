@@ -8,10 +8,10 @@ function hideRegisterationForm() {
     if (loginButton.innerText = "Sign In") {
         registrationForm.style.display = 'None';
         loginForm.style.display = 'block';
-        loginButton.innerText = "Sign up";
+        loginButton.innerText = "Sign Up";
         console.log(loginButton.innerText);
     }
-    if (loginButton.innerText === "Sign up") {
+    if (loginButton.innerText === "Sign Up") {
         loginButton.addEventListener("click", function () {
         registrationForm.style.display = "block";
         loginForm.style.display = 'none';
