@@ -30,9 +30,11 @@ header, footer {
     background-color: var(--primary-color);
 }
 
-nav {
+nav ul{
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    margin-right: 200px;
+
 }
 
 

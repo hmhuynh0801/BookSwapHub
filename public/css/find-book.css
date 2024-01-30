@@ -1,0 +1,24 @@
+#search-form-section {
+    margin-top: 100px;
+    margin-left: 350px;
+}
+
+#search-box {
+    display: block;
+    width: 500px;
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 20px;
+
+}
+
+#search-btn {
+    margin-top: 15px;
+    margin-left: 180px;
+    background-color:
+}
+
+#clear-btn {
+    margin-left: 15px;
+}
+
