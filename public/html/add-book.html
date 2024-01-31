@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="../css/add-book.css" />
-    <link rel="stylesheet" href="../css/add-b.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    
+
 </head>
 <body>
     <header class="flex-row justify-content-center">
-        <img src="../images/logo.png" id="logo" alt="logo" />
+       <h3 id="logo">BookSwapHub</h3>
        <div class="flex-1"></div>
         <nav class="flex-2">
             <ul>
@@ -25,13 +27,12 @@
     </header>
     <main class="flex-column">
         <div class="main-header">
-            <h1  style="font-size:50px;">BOOK SWAP HUB</h1>   
         </div>
        
         <div class="sections flex-row w-full justify-content-center">
-            <section id="registration-form-section">
-                <form method="post" action="#" id="reg-form">
-                    <table id="reg-table"> 
+            <section id="Add-book-form-section">
+                <form method="post" action="#" id="add-book-form">
+                    <table id="add-book-table"> 
                         <tr>
                             <caption><h3 class="text-white">Add Books</h3></caption>
                         </tr>
@@ -49,6 +50,12 @@
                         </tr>                
                         <tr>
                             <td><input type="text" placeholder="Author's Name"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Find Book"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="E-mail"></td>
                         </tr>
                         <tr>
                             <td id="signup">

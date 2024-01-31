@@ -1,6 +1,7 @@
 :root {
     --primary-color : rgb(0, 0, 0);
     --white : rgb(255, 255, 255);
+    --red : rgb(209, 6, 6); #
 }
 
 header {
@@ -48,11 +49,17 @@ nav a {
 
 footer span {
     
-    
+    display: flex;
     justify-content: center;
     margin-top: 20px;
     font-size: 10px;
 }
+
+#logo {
+    color: var(--red);
+    margin-left: 45px;
+}
+
 
 img#logo {
     height: 40px;
@@ -77,9 +84,10 @@ img#logo {
     color: var(--primary-color);
 }
 
-input[type="text"] {
-    width: 350px;
-    height: 30px;
-    border: 2px solid var(--primary-color);
-    border-radius: 7px;
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    margin-right: 300px;
+
 }
