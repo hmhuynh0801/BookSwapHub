@@ -44,15 +44,17 @@ main {
 
 #reg-table , #signin-table {
     border-spacing: 0 10px;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
-/* #login-form, #reg-form {
-    padding: 40px;
-} */
+
+
+#login-form {
+    margin-top: 50px;
+}
 
 #signin-btn, #signup-btn {
-    margin-left: 65px;
+    margin-left: 85px;
     height: 30px;
     background-color: var(--primary-color);
     color: var(--white);
@@ -65,7 +67,7 @@ main {
 
 
 input[type="text"], input[type="password"], input[type="email"]{
-    width: 200px;
+    width: 250px;
     height: 30px;
     border: 2px solid var(--primary-color);
     border-radius: 7px;
