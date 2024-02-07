@@ -1,7 +1,8 @@
-const { default: mongoose } = require("mongoose");
+const mongoose = require("mongoose");
+let Schema = mongoose.Schema;
 
-
-const bookSchema = new mongoose.Schema({
+//Book model gives us funcitions to create, update delete, CRUD
+const bookSchema = new Schema({
     title: String,
     publisher: String,
     author: String,
@@ -18,4 +19,4 @@ let Book = mongoose.model('Book', bookSchema)
 
 
 
-module.exports = { Book }
+module.exports =  Book 

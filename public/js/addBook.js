@@ -10,14 +10,25 @@ form.addEventListener("submit", async (event)=>{
           "Content-Type": "application/json",
           // 'Content-Type': 'application/x-www-form-urlencoded',
         },
-        redirect: "follow", // manual, *follow, error
-        referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-        body: JSON.stringify({
+         body: JSON.stringify({
             firstName: form.firstName.value,
             lastName: form.lastName.value,
-            email: form.email.value
+            email: form.email.value,
+            author: form.author.value,
+            bookInterested: form.bookInterested.value,
+            isbn: form.isbn.value,
+            title: form.title.value
         }), // body data type must match "Content-Type" header
       });
 
 
 })
+
+async function getBooks(){
+
+  const response = await fetch("http://localhost:3000/api/books");
+  const data = await response.json();
+  console.log("books:",data)
+}
+
+getBooks();
