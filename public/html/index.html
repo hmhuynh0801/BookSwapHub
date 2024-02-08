@@ -30,26 +30,26 @@
            <!-- <img id="logo-img" src="../images/logo.png"> -->
         </section>"
         <section id="registration-form-section">
-            <form method="post" action="#" id="reg-form">
+            <form method="post" action="/user" id="reg-form">
                 <table id="reg-table"> 
                     <caption><h3>Registration Form</h3></caption>
                     <tr>
-                        <td><input type="text" placeholder="First name"></td>
+                        <td><input type="text" name="firstname" placeholder="First name"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" placeholder="Last name"></td>
+                        <td><input type="text" name="lastname"  placeholder="Last name"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" placeholder="School Email"></td>
+                        <td><input type="email" name="email" placeholder="School Email"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" placeholder="Student Id"></td>
+                        <td><input type="text" name="stId"   placeholder="Student Id"></td>
                     </tr>
                     <tr>
-                        <td><input type="password" placeholder="Password"></td>
+                        <td><input type="password" name="password"   placeholder="Password"></td>
                     </tr>
                     <tr>
-                        <td><input type="password" placeholder="Confirm Password"></td>
+                        <td><input type="password" name="confirmPassword" placeholder="Confirm Password"></td>
                     </tr>
                     <!-- <tr>
                         <td>
@@ -68,20 +68,31 @@
                             <button type="submit" id="signup-btn" value="sign up">Sign Up</button>
                         </td>
                     </tr>
+                    <tr>
+                        <td>
+                            <span id="notification"></span>
+                        </td>
+                    </tr>
                 </table>
             </form>
+            
             <form id="login-form" method="post" action="#">
                 <table id="signin-table"> 
                     <caption><h3>Login</h3></caption>
                     <tr>
-                        <td><input type="email" placeholder="Email"></td>
+                        <td><input type="email" name="email"  placeholder="Email"></td>
                     </tr>
                     <tr>
-                        <td><input type="password" placeholder="Password"></td>
+                        <td><input type="password" name="password"  placeholder="Password"></td>
                     </tr>
                     <tr>
                         <td>
                             <button type="submit" id="signin-btn" value="sign in">Sign In</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="notificaion">
+                            <!-- <span id="notifcation">Hello world</span> -->
                         </td>
                     </tr>
                 </table>
@@ -89,7 +100,7 @@
         </section>
     </main>
     <footer>
-        <span class="copright-span">&copy; copy rights</span>
+     
     </footer>
     <script src="../js/index.js">
         // const loginButton = document.querySelector("#login-btn");
