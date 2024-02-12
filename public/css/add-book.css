@@ -21,6 +21,7 @@ main {
 
 #Add-book-form-section {
     display: flex;
+    flex-direction: column;
     width: 30vw;
     height: 80vh;
     --bg: rgb(38, 35, 35);
@@ -105,3 +106,22 @@ h1 {
     height: 100%;
 }
 
+fieldset{
+    border: none;
+    display: flex;
+    gap: 10px;
+}
+label{
+   flex:1 1 40%;
+}
+input {
+flex: 1 1  60%;
+}
+form{
+    width: 100%;
+
+}
+h3{
+    padding: 0px 15px;
+    text-align: center;
+}

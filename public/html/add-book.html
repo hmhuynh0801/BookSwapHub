@@ -18,7 +18,7 @@
                <li><a href="./index.html"> Home </a></li>
                 <li><a href="#"> Add Book</a></li>
                 <li><a href="./find-a-book.html">Find Book</a></li>
-                <li><a href="./about"> About</a></li>
+                <li><a href="./about.html"> About</a></li>
                 <li><a href="./contacts"> Contacts</a></li>
                 <li><a href="./faq.html"> FAQ</a></li>             
             </ul>
@@ -32,38 +32,40 @@
        
         <div class="sections flex-row w-full justify-content-center">
             <section id="Add-book-form-section">
+                <h3>Add Books</h3>
                 <form method="post" id="add-book-form">
-                    <table id="add-book-table"> 
-                        <tr>
-                            <caption><h3 class="text-white">Add Books</h3></caption>
-                        </tr>
-                        <tr>
-                            <td><input name="firstName" type="text" placeholder="First name"></td>
-                        </tr>
-                        <tr>
-                            <td><input name="lastName" type="text" placeholder="Last name"></td>
-                        </tr>
-                        <tr>
-                            <td><input name="title" type="text" placeholder="Book Title"></td>
-                        </tr> 
-                        <tr>
-                            <td><input name="isbn" type="text" placeholder="ISBN"></td>
-                        </tr>                
-                        <tr>
-                            <td><input name="author" type="text" placeholder="Author's Name"></td>
-                        </tr>
-                        <tr>
-                            <td><input name="bookInterested" type="text" placeholder="Book I looking for"></td>
-                        </tr>
-                        <tr>
-                            <td><input name="email" type="text" placeholder="E-mail"></td>
-                        </tr>
-                        <tr>
-                            <td id="signup">
-                                <input type="submit" value="Submit" />
-                            </td>
-                        </tr>
-                    </table>
+                    <fieldset>
+                        <label for="">First Name: </label>
+                        <input name="firstName" type="text" placeholder="">
+                    </fieldset>
+                    <fieldset>
+                        <label for="">Last Name: </label>
+                        <input name="lastName" type="text" placeholder="">
+                    </fieldset>
+                    <fieldset>
+                        <label for="">Book Title</label>
+                        <input name="title" type="text" placeholder="">
+                    </fieldset>
+                    <fieldset>
+                        <label for="">ISBN</label>
+                        <input name="isbn" type="text" placeholder="">
+                    </fieldset>
+                    <fieldset>
+                        <label for="">Author</label>
+                        <input name="author" type="text" placeholder="">
+                    </fieldset>
+                    <fieldset>
+                        <label for="">Book Interested</label>
+                        <input name="bookInterested" type="text" placeholder="">
+                    </fieldset>
+                    <fieldset>
+                        <label for="">Email</label>
+                        <input name="email" type="text" placeholder="">
+                    </fieldset>
+                    <fieldset>
+                        <input type="submit" value="Submit" />
+                    </fieldset>
+               
                 </form>
             </section>
     
