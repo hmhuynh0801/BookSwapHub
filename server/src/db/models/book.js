@@ -3,11 +3,11 @@ let Schema = mongoose.Schema;
 
 //Book model gives us funcitions to create, update delete, CRUD
 const bookSchema = new Schema({
+    firstName: String,
+    lastName: String,
     title: String,
     publisher: String,
     author: String,
-    firstName: String,
-    lastName: String,
     email: String,
     isbn: String,
     bookInterested: String,

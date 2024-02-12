@@ -1,7 +1,7 @@
 :root {
     --primary-color : rgb(0, 0, 0);
     --white : rgb(255, 255, 255);
-    --red : rgb(209, 6, 6); #
+    --red : rgb(209, 6, 6);
 }
 
 header {
@@ -30,9 +30,11 @@ header, footer {
     background-color: var(--primary-color);
 }
 
-nav {
+nav ul{
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    margin-right: 200px;
+
 }
 
 
@@ -84,10 +86,3 @@ img#logo {
     color: var(--primary-color);
 }
 
-
-nav ul{
-    display: flex;
-    justify-content: center;
-    margin-right: 300px;
-
-}

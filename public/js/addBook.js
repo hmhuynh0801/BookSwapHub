@@ -18,6 +18,7 @@ form.addEventListener("submit", async (event)=>{
             bookInterested: form.bookInterested.value,
             isbn: form.isbn.value,
             title: form.title.value
+            
         }), // body data type must match "Content-Type" header
       });
 
