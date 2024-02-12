@@ -1,7 +1,7 @@
 body {
     margin-top : 90px;
     /* max-width: max-content; */
-    background-image: url(../images/BG-Book.jpg);
+    background-image: url(../images/3.png);
     background-size: cover;
     background-position: center;
 }
@@ -21,15 +21,15 @@ main {
 
 #Add-book-form-section {
     display: flex;
-    width: 30vw;
-    height: 80vh;
+    width: 70vw;
+    height: 100vh;
     --bg: rgb(38, 35, 35);
     background-color: var(--white);
-    border: 2px solid var(--white);
+    border: 10px solid var(--white);
     color: var(--primary-color);
     opacity: 0.8;
     border-radius: 20px;
-    margin-right: 0px;
+    margin-right: 60px;
     justify-content: center;
     padding: 3 10px;
     font-size: 20px;
@@ -44,7 +44,7 @@ main {
 
 
 #hero-section {
-    width: 65%;
+    width: 10%;
     height: 0px;
     background-color: var(--primary-color);
     border: 30px solid var(--white);
