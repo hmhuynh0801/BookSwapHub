@@ -2,6 +2,7 @@
     --primary-color : rgb(0, 0, 0);
     --white : rgb(255, 255, 255);
     --red : rgb(209, 6, 6);
+    --red : rgb(209, 6, 6);
 }
 
 header {
@@ -31,7 +32,11 @@ header, footer {
 }
 
 nav ul{
+nav ul{
     display: flex;
+    justify-content: center;
+    margin-right: 200px;
+
     justify-content: center;
     margin-right: 200px;
 
@@ -52,10 +57,17 @@ nav a {
 footer span {
     
     display: flex;
+    display: flex;
     justify-content: center;
     margin-top: 20px;
     font-size: 10px;
 }
+
+#logo {
+    color: var(--red);
+    margin-left: 45px;
+}
+
 
 #logo {
     color: var(--red);

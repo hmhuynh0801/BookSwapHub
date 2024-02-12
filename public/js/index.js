@@ -4,12 +4,20 @@ const registrationForm = document.querySelector("#reg-form");
 const loginForm = document.querySelector("#login-form");
 loginForm.style.display = "none";
 
+console.log(registrationForm[0]);
+const firstName = registrationForm[0];
+const lastName = registrationForm[1];
+const email = registrationForm[2];
+const password = registrationForm[3];
+const confirmPassword = registrationForm[4];
+
+
+
 function hideRegisterationForm() {
     if (loginButton.innerText = "Sign In") {
         registrationForm.style.display = 'None';
         loginForm.style.display = 'block';
         loginButton.innerText = "Sign Up";
-        console.log(loginButton.innerText);
     }
     if (loginButton.innerText === "Sign Up") {
         loginButton.addEventListener("click", function () {
@@ -21,3 +29,4 @@ function hideRegisterationForm() {
 }
 
 loginButton.addEventListener("click", hideRegisterationForm);
+
