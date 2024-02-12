@@ -43,3 +43,30 @@
     background-color: lightblue;
     border: 1px solid black;
 }
+
+#center {
+    margin-top: 100px;
+}
+
+#book-details {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    width: 400px;
+    background-color: aqua;
+}
+
+
+#bookList {
+    margin-top: 180px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#bookList li{
+    display: block;
+    padding: 7px 10px;
+    font-size: 18px;
+    
+}
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/book-submit.css" />
+    </head>
+    <body>
+        <header>
+            <h3 id="logo">BookSwapHub</h3>
+            <nav>
+                <ul>
+                    <li><a href=".index"> Home </a></li>
+                    <li><a href="#"> Add Book</a></li>
+                    <li><a href="./find-book">Find Book</a></li>
+                    <li><a href="./about"> About</a></li>
+                    <li><a href="./contacts"> Contacts</a></li>
+                    <li><a href="./faq"> FAQ</a></li>               
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="book-submission-section">
+                <h1 id="page-title"> Add a book </h1>
+                <form method="post" action="/book" id="book-sumbission-form">
+                    <input type="text" name="firstName" placeholder="First name">
+                    <input type="text" name="lastName" placeholder="Last name">
+                    <input type="text" name="title" placeholder="Book's title">
+                    <input type="text" name="isbn" placeholder="ISBN">
+                    <input type="text" name="author" placeholder="Author/s" >
+                    <input type="text" name="edition" placeholder="Edition" value="N/A">
+                    <input type="text" name="email" placeholder="Owner's email" >
+                    <input type="text" name="bookInterested" placeholder="Book interested in.." >
+
+                    <button type="submit" value="Submit">Sumbit</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <span class="copright-span">&copy; copy rights</span>
+        </footer>
+        <script>
+            
+        </script>
+        </script>
+    </body>
+</html>

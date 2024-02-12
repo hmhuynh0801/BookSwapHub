@@ -17,14 +17,12 @@ userRouter.post('/user', async (req, res) => {
             ...req.body,
             
         });
-        // res.json(newUser);
         res.redirect('/index');
     }
     catch(err){
         console.error(err);
         res.sendStatus(500);
     }
-    // res.json({weSawData: true});
     res.send()
 });
 
@@ -39,6 +37,16 @@ userRouter.get('/user/all', async (req, res) =>{
         console.error(err);
         res.sendStatus(500);
     }
+});
+
+
+userRouter.get('/user/:email', async (req, res) => {
+    const email = req.params.email;
+    console.log(email);
+    const users = db.collection('users');
+    const myAcc = await users.findOne({email: email});
+    res.json(myAcc);
+    console.log(myAcc);
 });
 
 module.exports = userRouter;

@@ -56,12 +56,12 @@ main {
 #reg-table , #signin-table {
 #reg-table , #signin-table {
     border-spacing: 0 10px;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
-/* #login-form, #reg-form {
-    padding: 40px;
-} */
+
+
+
 
 #signin-btn, #signup-btn {
     margin-left: 65px;

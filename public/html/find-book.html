@@ -12,32 +12,100 @@
             <h3 id="logo">BookSwapHub</h3>
             <nav>
                 <ul>
-                    <li><a href="./index.html"> Home </a></li>
-                    <li><a href="./add-book.html"> Add Book</a></li>
-                    <li><a href="#">Find Book</a></li>
-                    <li><a href="./aboutus.html"> About Us</a></li>
-                    <li><a href="./contacts.html"> Contacts</a></li>
-                    <li><a href="./faq.html"> FAQ</a></li>               
+                    <li><a href="./index"> Home </a></li>
+                    <li><a href="./add-book"> Add Book</a></li>
+                    <li><a href="#">Find a book</a></li>
+                    <li><a href="./about"> About Us</a></li>
+                    <li><a href="./contacts"> Contacts</a></li>
+                    <li><a href="./faq"> FAQ</a></li>               
                 </ul>
             </nav>
         </header>
         <main>
-            <section id="search-form-section">
-                <form id="search-form"  method="get" action="" >
-                    <input  type="search" id="search-box" placeholder="Search..." />
-                    <button type="search" id="search-btn" name="search">
-                        Search
-                    </button>
-                    <button type="clear" id="clear-btn" name="clear">
-                        clear
-                    </button>
-                </form>
-            </section>
+            <div id="center">
+                <section id="search-form-section">
+                    <!-- <form id="search-form"> -->
+                        <input  type="search" name="query" placeholder="Search..." id="search-box" />
+                        <button type="submit" name="search" id="search-btn">
+                            Search
+                        </button>
+                        <button type="clear" id="clear-btn" name="clear">
+                            clear
+                        </button>
+                        <section id="book-details">
+                            <ul id="bookList">
+                                
+                            </ul>
+                        </section>
+                    <!-- </form> -->
+                </section>
+            </div>
         </main>
         <footer>
             <span class="copright-span">&copy; copy rights</span>
         </footer>
-        <script src="../js/index.js">
+        <script src="../js/find-book.js">
+            // // const isbn = parseFloat(document.querySelector('#search-box').value);
+            // const searchBtn = document.querySelector('#search-btn');
+            // // console.log(isbn);
+            // // console.log(searchBtn);
+            
+            // // const findBookApi = `http://localhost:3000/book/${isbn}`;
+
+            // function searchBook(event) {
+            //     event.preventDefault();
+            //     const isbn = document.querySelector('#search-box').value;
+            //     const findBookApi = `http://localhost:3000/book/${isbn}`;          
+            //     fetch(findBookApi)
+            //     .then(res => res.json())
+            //     .then((data) => {
+            //         const ul = document.getElementById('bookList');
+
+            //         const bookInfoLi = document.createElement('li');
+            //         bookInfoLi.textContent = " ====( Book Info )====";
+
+            //         const bookTitleLi = document.createElement('li');
+            //         bookTitleLi.textContent = "Book Title" +": " + data.booktitle;
+
+            //         const isbnLi = document.createElement('li');
+            //         isbnLi.textContent = "Book's ISBN" +": " + data.isbn;
+
+
+            //         const editionLi = document.createElement('li');
+            //         editionLi.textContent = "Edition" + ": " + data.edition;
+                    
+            //         const authorLi = document.createElement('li');
+            //         authorLi.textContent = "Book's Author" +": " + data.aurhorname;
+                    
+            //         const ownerInfoLi = document.createElement('li');
+            //         ownerInfoLi.textContent = " ====( Owner Info )====";
+
+            //         const firstnameLi = document.createElement('li');
+            //         firstnameLi.textContent = "First name" + ": " + data.firstname;
+
+            //         const lastnameLi = document.createElement('li');
+            //         lastnameLi.textContent = "Last name" + ": " + data.lastname;
+
+            //         const emailLi = document.createElement('li');
+            //         emailLi.textContent = "Email" + ": " + data.owneremail;
+
+                    
+            //         ul.appendChild(bookInfoLi);
+            //         ul.appendChild(bookTitleLi);
+            //         ul.appendChild(isbnLi);
+            //         ul.appendChild(authorLi);
+            //         ul.appendChild(ownerInfoLi);
+            //         ul.appendChild(firstnameLi);
+            //         ul.appendChild(lastnameLi);
+            //         ul.appendChild(emailLi);
+
+
+            //         })
+            //         // console.log(data._id);
+            //         // console.log(data.firstname);
+            //     }
+
+            // searchBtn.addEventListener('click', searchBook);
         </script>
     </body>
 </html>
