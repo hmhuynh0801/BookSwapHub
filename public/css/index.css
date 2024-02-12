@@ -44,14 +44,12 @@ main {
 
 #reg-table , #signin-table {
     border-spacing: 0 10px;
-    margin-top: 20px;
-}
-
-
-
-#login-form {
     margin-top: 50px;
 }
+
+
+
+
 
 #signin-btn, #signup-btn {
     margin-left: 85px;

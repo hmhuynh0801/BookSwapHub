@@ -1,10 +1,22 @@
 
 const loginButton = document.querySelector("#login-btn");
 const registrationForm = document.querySelector("#reg-form");
-const loginForm = document.querySelector("#login-form");
+const signInTable = document.querySelector("#signin-table");
 const signUpButton = document.querySelector("#signup-btn");
 const notification = document.querySelector("#notification");
-loginForm.style.display = "none";
+const signIn = document.querySelector("#signin-btn");
+signInTable.style.display = "none";
+
+
+
+function loginVerification () {
+const emailId = document.querySelector("#email");
+const password = document.querySelector("#password");
+    console.log(emailId);
+    console.log(password);
+
+}
+
 
 // console.log(registrationForm[0]);
 const firstName = registrationForm[0];
@@ -16,39 +28,43 @@ const confirmPassword = registrationForm[4];
 
 
 function hideRegisterationForm() {
-    if (loginButton.innerText = "Sign In") {
-        registrationForm.style.display = 'None';
-        loginForm.style.display = 'block';
-        loginButton.innerText = "Sign Up";
-    }
-    if (loginButton.innerText === "Sign Up") {
-        loginButton.addEventListener("click", function () {
-        registrationForm.style.display = "block";
-        loginForm.style.display = 'none';
-        loginButton.innerText = "Sign In";
-        })
-    }
+    registrationForm.style.display = 'none';
+    signInTable.style.display = 'block';
+}
+    
+
+
+function loginVerification() {
+
+    const emailId = document.querySelector('#email').value;
+    const passwordId = document.querySelector('#password').value;
+    // emailId = 'abutalib56@hotmail.com';
+    const loginApi = `http://localhost:3000/user/${emailId}`;
+
+    fetch(loginApi)
+    .then(res => res.json())
+    .then((data) => {
+        if(`${data}` === 'null'){  
+            console.log("Enter a valid login");
+        } else if(!(`${data.email}` === 'undefined')) {
+            if ( Number(passwordId) === Number(data.password)) {
+                window.location.href = "/find-book";
+            }
+            // if(passwordId === data.password) {
+            
+            // }
+        }
+    })
+
+    console.log(loginApi);
+    
 }
 
 
 
-console.log(notifcation.innerText);
-
-function passwordMatch(event) {
-    if (password.value != confirmPassword.value) {
-        event.preventDefault();
-        const labelSpan = document.createElement("span");
-        labelSpan.innerText = "Password did not match";
-        labelSpan.style.fontSize = "20px";
-        labelSpan.style.color = "red";
-        notification.appendChild(labelSpan);
-        
-        
-    }
-}
-
-
-signUpButton.addEventListener("click", passwordMatch);
+signIn.addEventListener('click', loginVerification);
 
 loginButton.addEventListener("click", hideRegisterationForm);
+
+
 

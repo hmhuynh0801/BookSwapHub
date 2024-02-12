@@ -1,8 +1,9 @@
 const express = require('express')
 const bodyParser = require('body-parser');
 const app = express()
-const port = 3000
-const userRouter = require("./src/routes/userRoute");
+const port = 3000;
+const userRouter = require("./src/routes/userRoute")
+const bookRouter = require("./src/routes/bookRoute")
 
 const aLoggerMiddleware = (req, res, next) => {
     console.log(req.url, req.method, res.statusCode.js);
@@ -12,10 +13,11 @@ const aLoggerMiddleware = (req, res, next) => {
 app.use(aLoggerMiddleware);
 app.use(express.static('public'));
 app.use(
-    bodyParser.urlencoded({ extended: false }),
-    bodyParser.json({ extended: false }),
+    bodyParser.urlencoded({ extended: true }),
+    bodyParser.json({ extended: true }),
 );
 app.use(userRouter);
+app.use(bookRouter);
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
@@ -29,6 +31,15 @@ app.get('/index', (req, res) => {
 app.get('/api/user', (req, res) => {
     console.log(userInfo);
     res.json(userInfo);
+});
+
+app.get('/book-submit', (req, res) => {
+    res.sendFile(__dirname + '/public/html/book-submit.html');
+});
+
+
+app.get('/find-book', (req, res) => {
+    res.sendFile(__dirname + '/public/html/find-book.html');
 });
 
 app.listen(port, () => {

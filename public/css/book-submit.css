@@ -1,0 +1,22 @@
+#book-submission-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+
+}
+
+#book-sumbission-form {
+    margin: 0 auto;
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+    width: 400px;
+    height: 25px;
+}
+
+#page-title {
+    margin: 20px auto;
+
+}

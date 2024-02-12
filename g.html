@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="search" id="seach"  placeholder="Search">
+    <button type="button" id="seachbtn">search</button>
+    <script>
+        const searchedItem = "Harry Potter";
+        const baseUrl = `https://www.googleapis.com/books/v1/volumes?q=${searchedItem}`;
+        fetch(baseUrl)
+                .then((response) => response.json())
+                .then((data) => {
+                    console.log(data);
+                    const books = data.items;
+
+                    books.forEach((book) => {
+                        console.log(book.volumeInfo.title);
+                        console.log(book.volumeInfo.publishedDate);
+                        console.log(book.volumeInfo.imageLinks);
+
+                    }
+                )});
+    
+    </script>
+</body>
+</html>
