@@ -1,0 +1,107 @@
+body {
+    margin-top : 90px;
+    /* max-width: max-content; */
+    background-image: url(../images/3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#logo {
+    color: var(--red);
+    margin-left: 45px;
+}
+
+#Add-book-form-section {
+    display: flex;
+    width: 70vw;
+    height: 100vh;
+    --bg: rgb(38, 35, 35);
+    background-color: var(--white);
+    border: 10px solid var(--white);
+    color: var(--primary-color);
+    opacity: 0.8;
+    border-radius: 20px;
+    margin-right: 60px;
+    justify-content: center;
+    padding: 3 10px;
+    font-size: 20px;
+}
+
+
+
+#add-book-table , #signin-table {
+    border-spacing: 0 10px;
+    margin-top: 90px;
+}
+
+
+#hero-section {
+    width: 10%;
+    height: 0px;
+    background-color: var(--primary-color);
+    border: 30px solid var(--white);
+    color: var(--white);
+    opacity: 0.5;
+    border: none;
+}
+
+/* justify[content|item] start center end */
+.justify-content-start{
+    justify-content: start;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-end{
+    justify-content: end;
+}
+
+/* align[content|item] start center end */
+.align-items-start{
+    justify-content: start;
+}
+.align-items-center{
+    justify-content: center;
+}
+.align-items-end{
+    justify-content: end;
+}
+
+/* flex */
+.flex-2 {
+    flex-grow: 2;
+}
+
+h1 {
+    display: flex;
+}
+
+.flex-grow-none {
+    flex-grow: none;
+}
+
+.flex-row,.flex-column {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.w-full{
+    width:100%;
+}
+
+.h-full{
+    height: 100%;
+}
+
