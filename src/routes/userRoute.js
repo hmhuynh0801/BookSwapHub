@@ -1,7 +1,7 @@
 const { Router } = require('express');
 const userRouter = Router();
 const mongoClient = require("../db/connection.js");
-const db = mongoClient.db("bsh");
+const db = mongoClient.db("book_swap_hub");
 
 
 userRouter.get('/user', (req, res) => {

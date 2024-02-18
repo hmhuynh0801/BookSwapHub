@@ -20,7 +20,7 @@ app.use(userRouter);
 app.use(bookRouter);
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.sendFile(__dirname + '/public/html/index.html')
 
 })
 
@@ -42,6 +42,29 @@ app.get('/find-book', (req, res) => {
     res.sendFile(__dirname + '/public/html/find-book.html');
 });
 
+
+app.get('/add-book', (req, res) => {
+    res.sendFile(__dirname + '/public/html/add-book.html');
+});
+
+app.get('/about', (req, res) => {
+    res.sendFile(__dirname + '/public/html/about.html');
+});
+
+app.get('/contact', (req, res) => {
+    res.sendFile(__dirname + '/public/html/contact.html');
+});
+
+app.get('/faq', (req, res) => {
+    res.sendFile(__dirname + '/public/html/faq.html');
+});
+
+app.get('/ab', (req, res) => {
+    res.sendFile(__dirname + '/public/html/ab.html');
+});
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
+
+

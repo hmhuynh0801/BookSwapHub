@@ -1,5 +1,6 @@
 // const isbn = parseFloat(document.querySelector('#search-box').value);
 const searchBtn = document.querySelector('#search-btn');
+const clearBtn = document.querySelector('#clear-btn');
 // console.log(isbn);
 // console.log(searchBtn);
 const ul = document.getElementById('bookList');
@@ -7,6 +8,10 @@ const ul = document.getElementById('bookList');
 
 function clearResult() {
     ul.innerHTML = "";
+}
+
+function clearSearchBox () {
+    document.querySelector('#search-box').value = '';
 }
 
 function searchBook() {
@@ -77,6 +82,9 @@ function searchBook() {
 
                 ul.appendChild(notFound);
             }
+
+            clearSearchBox();
+
     })
     
 
@@ -85,4 +93,9 @@ function searchBook() {
         // console.log(data.firstname);
     }
 
+
+
+    
+
+clearBtn.addEventListener('click', clearSearchBox);
 searchBtn.addEventListener('click', searchBook);
