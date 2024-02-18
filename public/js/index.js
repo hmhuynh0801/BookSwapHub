@@ -61,6 +61,15 @@ function loginVerification() {
 }
 
 
+function singUpNotes () {
+    const notes = document.querySelector('#notification');
+    notes.innerText = 'Congrats!';
+    notes.style.fontSize = '20px';
+    notes.style.color = 'green';
+    console.log(notes);
+}
+
+signUpButton.addEventListener('click', singUpNotes);
 
 signIn.addEventListener('click', loginVerification);
 
