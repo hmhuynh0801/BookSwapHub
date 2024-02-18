@@ -59,9 +59,6 @@ app.get('/faq', (req, res) => {
     res.sendFile(__dirname + '/public/html/faq.html');
 });
 
-app.get('/ab', (req, res) => {
-    res.sendFile(__dirname + '/public/html/ab.html');
-});
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)

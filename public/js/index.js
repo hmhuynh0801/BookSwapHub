@@ -37,6 +37,7 @@ function hideRegisterationForm() {
 function loginVerification() {
 
     const emailId = document.querySelector('#email').value;
+    console.log(emailId);
     const passwordId = document.querySelector('#password').value;
     // emailId = 'abutalib56@hotmail.com';
     const loginApi = `http://localhost:3000/user/${emailId}`;
