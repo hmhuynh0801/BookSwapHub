@@ -5,6 +5,8 @@ const port = 8103;
 const userRouter = require("./src/routes/userRoute")
 const bookRouter = require("./src/routes/bookRoute")
 
+
+
 const aLoggerMiddleware = (req, res, next) => {
     console.log(req.url, req.method, res.statusCode.js);
     next();
@@ -18,6 +20,7 @@ app.use(
 );
 app.use(userRouter);
 app.use(bookRouter);
+app.use(express.static("public"));
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/html/index.html')
