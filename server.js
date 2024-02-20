@@ -5,8 +5,8 @@ require('dotenv').config()
 // console.log(process.env) 
 const port = 8103;
 // const port = 3000;
-// const userRouter = require("./src/routes/userRoute")
-// const bookRouter = require("./src/routes/bookRoute")
+const userRouter = require("./src/routes/userRoute")
+const bookRouter = require("./src/routes/bookRoute")
 
 const userRouter = require("src/routes/userRoute")
 const bookRouter = require("src/routes/bookRoute")
