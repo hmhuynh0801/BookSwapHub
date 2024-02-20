@@ -6,6 +6,7 @@ const userRouter = require("./src/routes/userRoute")
 const bookRouter = require("./src/routes/bookRoute")
 
 
+app.use(express.static('public'));
 
 const aLoggerMiddleware = (req, res, next) => {
     console.log(req.url, req.method, res.statusCode.js);
@@ -13,14 +14,15 @@ const aLoggerMiddleware = (req, res, next) => {
 }
 
 app.use(aLoggerMiddleware);
-app.use(express.static('public'));
+
 app.use(
     bodyParser.urlencoded({ extended: true }),
     bodyParser.json({ extended: true }),
 );
 app.use(userRouter);
 app.use(bookRouter);
-app.use(express.static("public"));
+// app.use(express.static("public"));
+
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/html/index.html')
