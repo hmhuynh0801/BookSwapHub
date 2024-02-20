@@ -8,8 +8,8 @@ const port = 8103;
 const userRouter = require("./src/routes/userRoute")
 const bookRouter = require("./src/routes/bookRoute")
 
-const userRouter = require("src/routes/userRoute")
-const bookRouter = require("src/routes/bookRoute")
+// const userRouter = require("src/routes/userRoute")
+// const bookRouter = require("src/routes/bookRoute")
 
 app.use(express.static('public'));
 
