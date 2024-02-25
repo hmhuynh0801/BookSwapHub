@@ -1,22 +1,150 @@
-#book-submission-section {
+body {
+    margin-top : 90px;
+    /* max-width: max-content; */
+    background-image: url(../images/Bk.png);
+    background-size: 1345px;
+    background-position: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#logo {
+    color: var(--red);
+    margin-left: 45px;
+}
+
+#Add-book-form-section {
     display: flex;
     flex-direction: column;
-    margin-top: 80px;
-
+    width: 30vw;
+    height: 80vh;
+    --bg: rgb(38, 35, 35);
+    background-color: rgb(19, 18, 18);
+    border: 2px solid  rgb(17, 16, 16);
+    color:  rgb(240, 247, 248);
+    opacity: 0.8;
+    border-radius: 20px;
+    margin-right: 0px;
+    justify-content: center;
+    padding: 3 10px;
+    font-size: 20px;
 }
 
-#book-sumbission-form {
-    margin: 0 auto;
+
+
+#book-submit-table , #signin-table {
+    border-spacing: 0 10px;
+    margin-top: 90px;
 }
 
+
+#hero-section {
+    width: 65%;
+    height: 0px;
+    background-color: var(--primary-color);
+    border: 30px solid var(--white);
+    color: var(--white);
+    opacity: 0.5;
+    border: none;
+}
+
+/* justify[content|item] start center end */
+.justify-content-start{
+    justify-content: start;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-end{
+    justify-content: end;
+}
+
+/* align[content|item] start center end */
+.align-items-start{
+    justify-content: start;
+}
+.align-items-center{
+    justify-content: center;
+}
+.align-items-end{
+    justify-content: end;
+}
+
+/* flex */
+.flex-2 {
+    flex-grow: 2;
+}
+
+h1 {
+    display: flex;
+}
+
+.flex-grow-none {
+    flex-grow: none;
+}
+
+.flex-row,.flex-column {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.w-full{
+    width:100%;
+}
+
+.h-full{
+    height: 100%;
+}
+
+fieldset{
+    border: none;
+    display: flex;
+    gap: 10px;
+}
+label{
+   flex:1 1 40%;
+}
 input {
-    display: block;
-    margin-bottom: 10px;
-    width: 400px;
-    height: 25px;
+flex: 1 1  60%;
 }
-
-#page-title {
-    margin: 20px auto;
+form{
+    width: 100%;
 
 }
+h3{
+    padding: 0px 15px;
+    text-align: center;
+}
+
+
+button, input[type=submit]{
+    padding: 10px;
+    width: 300px;
+    margin: 15px;
+    font-size: 16px;
+    background: #0c0c0c;
+    color:#eff2f4;
+    border-radius: 18px;
+    border: 3px solid #f0ebeb;
+
+}
+button:hover,  input[type=submit]:hover{
+    box-shadow: 
+    0 0 10px rgb(236, 240, 242),
+    0 0 20px rgb(232, 238, 241),
+    0 0 20px rgb(226, 233, 238),
+    0 0 30px rgb(221, 230, 235);
+}
+
+
+

@@ -11,6 +11,10 @@ const bookSchema = new Schema({
     email: String,
     isbn: String,
     bookInterested: String,
+    edition: String,
+
+
+    
 
 
 });

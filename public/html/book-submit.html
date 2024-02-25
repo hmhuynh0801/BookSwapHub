@@ -1,49 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
-        <link rel="stylesheet" href="../css/common.css" />
-        <link rel="stylesheet" href="../css/book-submit.css" />
-    </head>
-    <body>
-        <header>
-            <h3 id="logo">BookSwapHub</h3>
-            <nav>
-                <ul>
-                    <li><a href=".index"> Home </a></li>
-                    <li><a href="#"> Add Book</a></li>
-                    <li><a href="./find-book">Find Book</a></li>
-                    <li><a href="./about"> About</a></li>
-                    <li><a href="./contacts"> Contacts</a></li>
-                    <li><a href="./faq"> FAQ</a></li>               
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="book-submission-section">
-                <h1 id="page-title"> Add a book </h1>
-                <form method="post" action="/book" id="book-sumbission-form">
-                    <input type="text" name="firstName" placeholder="First name">
-                    <input type="text" name="lastName" placeholder="Last name">
-                    <input type="text" name="title" placeholder="Book's title">
-                    <input type="text" name="isbn" placeholder="ISBN">
-                    <input type="text" name="author" placeholder="Author/s" >
-                    <input type="text" name="edition" placeholder="Edition" value="N/A">
-                    <input type="text" name="email" placeholder="Owner's email" >
-                    <input type="text" name="bookInterested" placeholder="Book interested in.." >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/book-submit.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    
 
-                    <button type="submit" value="Submit">Sumbit</button>
+</head>
+<body>
+    <header class="flex-row justify-content-center">
+       <h3 id="logo">BookSwapHub</h3>
+       <div class="flex-1"></div>
+        <nav class="flex-2">
+            <ul>
+                <li><a href="./index"> Home </a></li>
+                    <li><a href="#"> Book Submit</a></li>
+                    <li><a href="find-book">Find Book</a></li>
+                    <li><a href="about"> About Us</a></li>
+                    <li><a href="./contact"> Contacts</a></li>
+                    <li><a href="./faq"> FAQ</a></li>                    
+            </ul>
+        </nav>
+        <div class="flex-1"></div>
+    </header>
+    <main class="flex-column">
+        <div class="main-header">
+        </div>
+
+       
+        <div class="sections flex-row w-full justify-content-center">
+            <section id="Add-book-form-section">
+                <h3>Book Submits</h3>
+                <form method="post" id="book-submit-form">
+                    <fieldset>
+                        <label for="">First Name: </label>
+                        <input name="firstName" type="text" placeholder="">
+                    </fieldset>
+                    <fieldset>
+                        <label for="">Last Name: </label>
+                        <input name="lastName" type="text" placeholder="">
+                    </fieldset>
+                    <fieldset>
+                        <label for="">Book Title</label>
+                        <input name="title" type="text" placeholder="">
+                    </fieldset>
+                    <fieldset>
+                        <label for="">ISBN</label>
+                        <input name="isbn" type="text" placeholder="">
+                    </fieldset>
+                    <fieldset>
+                        <label for="">Author</label>
+                        <input name="author" type="text" placeholder="">
+                    </fieldset>
+                    <fieldset>
+                        <label for="">Edition</label>
+                        <input name="edition" type="text" placeholder="">
+                    </fieldset>
+                    <fieldset>
+                        <label for="">Book Interested</label>
+                        <input name="bookInterested" type="text" placeholder="">
+                    </fieldset>
+                    <fieldset>
+                        <label for="">Email</label>
+                        <input name="email" type="text" placeholder="">
+                    </fieldset>
+                    <fieldset>
+                        <input type="submit" value="SUBMIT" />
+                    </fieldset>
+               
+               
                 </form>
             </section>
-        </main>
-        <footer>
-            <span class="copright-span">&copy; copy rights</span>
-        </footer>
-        <script>
-            
-        </script>
-        </script>
-    </body>
+    
+            <section id="hero-section">
+               
+            </section>
+        </div>
+       
+    </main>
+    <footer>
+        <span class="copright-span">&copy; copy rights</span>
+    </footer>
+    <script src="../js/addBook.js"></script>
+</body>
 </html>

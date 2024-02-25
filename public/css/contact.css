@@ -1,15 +1,14 @@
+
 body {
     margin-top : 90px;
     /* max-width: max-content; */
     background-image: url(../images/BG-Book.jpg);
-    background-size: cover;
+    background-size: 1345px;
     background-position: center;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ 
 }
 
 
@@ -19,26 +18,27 @@ main {
     margin-left: 45px;
 }
 
-#Add-book-form-section {
+#contactForm {
     display: flex;
     flex-direction: column;
     width: 30vw;
-    height: 80vh;
+    /*height: 80vh;*/
     --bg: rgb(38, 35, 35);
-    background-color: var(--white);
-    border: 2px solid var(--white);
-    color: var(--primary-color);
+    background-color: rgb(19, 18, 18);
+    border: 2px solid  rgb(17, 16, 16);
+    color:  rgb(240, 247, 248);
     opacity: 0.8;
     border-radius: 20px;
     margin-right: 0px;
     justify-content: center;
-    padding: 3 10px;
+    padding: 0px 60px;
     font-size: 20px;
+
 }
 
 
 
-#add-book-table , #signin-table {
+#book-submit-table , #signin-table {
     border-spacing: 0 10px;
     margin-top: 90px;
 }
@@ -83,6 +83,7 @@ main {
 
 h1 {
     display: flex;
+    color: white;
 }
 
 .flex-grow-none {
@@ -116,6 +117,7 @@ label{
 }
 input {
 flex: 1 1  60%;
+width: 145px;
 }
 form{
     width: 100%;
@@ -123,5 +125,30 @@ form{
 }
 h3{
     padding: 0px 15px;
-    text-align: center;
+    color: white;;
 }
+
+
+button, input[type=submit]{
+    padding: 10px;
+    width: 300px;
+    margin: 15px;
+    font-size: 16px;
+    background: #0c0c0c;
+    color:#eff2f4;
+    border-radius: 18px;
+    border: 3px solid #f0ebeb;
+
+}
+button:hover,  input[type=submit]:hover{
+    box-shadow: 
+    0 0 10px rgb(236, 240, 242),
+    0 0 20px rgb(232, 238, 241),
+    0 0 20px rgb(226, 233, 238),
+    0 0 30px rgb(221, 230, 235);
+}
+
+
+
+
+

@@ -1,7 +1,15 @@
-require('dotenv').config();
-const {MongoClient} = require('mongodb');
-// const url = "mongodb+srv://hmhuynh1:Hmh0929@books-data.xk6gxfq.mongodb.net/?retryWrites=true&w=majority";
-const url = `mongodb://${process.env.MONGODB_USER_NAME}:${process.env.MONGODB_PASSWORD}@192.168.171.67:27017/`;
-// const url = `mongodb://localhost:${process.env.PORT}/`;
-const mongoClient = new MongoClient(url);
-module.exports = mongoClient
+// getting-started.js
+const mongoose = require('mongoose');
+
+const database_url = process.env.DATABASE_URL ?? "mongodb://localhost:27017/";
+
+const connection = main().catch(err => console.log(err));
+
+async function main() {
+    console.log('connecting')
+    await mongoose.connect(database_url, { maxPoolSize: 10 }).then(() => console.log('db connected'));
+
+    // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
+}
+
+module.exports = { connection, mongoose }

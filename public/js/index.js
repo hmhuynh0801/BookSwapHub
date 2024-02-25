@@ -9,9 +9,9 @@ signInTable.style.display = "none";
 
 
 
-function loginVerification () {
-const emailId = document.querySelector("#email");
-const password = document.querySelector("#password");
+function loginVerification() {
+    const emailId = document.querySelector("#email");
+    const password = document.querySelector("#password");
     console.log(emailId);
     console.log(password);
 
@@ -31,7 +31,7 @@ function hideRegisterationForm() {
     registrationForm.style.display = 'none';
     signInTable.style.display = 'block';
 }
-    
+
 
 
 function loginVerification() {
@@ -40,29 +40,26 @@ function loginVerification() {
     console.log(emailId);
     const passwordId = document.querySelector('#password').value;
     // emailId = 'abutalib56@hotmail.com';
-    const loginApi = `http://localhost:3000/user/${emailId}`;
+    const loginApi = `http://localhost:3000/api/users/${emailId}`;
 
     fetch(loginApi)
-    .then(res => res.json())
-    .then((data) => {
-        if(`${data}` === 'null'){  
-            console.log("Enter a valid login");
-        } else if(!(`${data.email}` === 'undefined')) {
-            if ( Number(passwordId) === Number(data.password)) {
-                window.location.href = "/find-book";
+        .then(res => res.json())
+        .then((data) => {
+            console.log({ data })
+            if (!data || data.password !== passwordId) {
+                return console.log("Enter a valid login");
             }
-            // if(passwordId === data.password) {
-            
-            // }
-        }
-    })
+
+            //go to find book page
+            window.location.href = "/book-submit";
+        })
 
     console.log(loginApi);
-    
+
 }
 
 
-function singUpNotes () {
+function singUpNotes() {
     const notes = document.querySelector('#notification');
     notes.innerText = 'Congrats!';
     notes.style.fontSize = '20px';
@@ -78,3 +75,12 @@ loginButton.addEventListener("click", hideRegisterationForm);
 
 
 
+
+
+
+
+const isSigninPage = window.location.href.includes('page=signin')
+console.log({ isSigninPage })
+if (isSigninPage) {
+    hideRegisterationForm()
+}

@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/common.css" />
-    
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+
 
 </head>
+
 <body>
     <header>
         <!-- <img src="../images/logo.png" id="logo" alt="logo" /> -->
@@ -16,10 +18,10 @@
         <!-- <nav>
             <ul>
                 <li><a href="#"> Home </a></li>
-                <li><a href="./add-book.html"> Add Book</a></li>
-                <li><a href="./find-a-book.html">Find Book</a></li>
+                <li><a href="./book-submit.html"> Book Submit</a></li>
+                <li><a href="./find-book.html">Find Book</a></li>
                 <li><a href="./about"> About</a></li>
-                <li><a href="./contacts"> Contacts</a></li>
+                <li><a href="./contact"> Contacts</a></li>
                 <li><a href="./faq"> FAQ</a></li>               
             </ul>
         </nav> -->
@@ -27,26 +29,28 @@
     </header>
     <main>
         <section id="hero-section">
-           <!-- <img id="logo-img" src="../images/logo.png"> -->
+            <!-- <img id="logo-img" src="../images/logo.png"> -->
         </section>"
         <section id="registration-form-section">
-            <form method="post" action="/user" id="reg-form">
-                <table id="reg-table"> 
-                    <caption><h3>Registration Form</h3></caption>
+            <form method="post" action="/api/users" id="reg-form">
+                <table id="reg-table">
+                    <caption>
+                        <h3>Registration Form</h3>
+                    </caption>
                     <tr>
                         <td><input type="text" name="firstname" placeholder="First name"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="lastname"  placeholder="Last name"></td>
+                        <td><input type="text" name="lastname" placeholder="Last name"></td>
                     </tr>
                     <tr>
                         <td><input type="email" name="email" placeholder="School Email"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="stId"   placeholder="Student Id"></td>
+                        <td><input type="text" name="stId" placeholder="Student Id"></td>
                     </tr>
                     <tr>
-                        <td><input type="password" name="password"   placeholder="Password"></td>
+                        <td><input type="password" name="password" placeholder="Password"></td>
                     </tr>
                     <tr>
                         <td><input type="password" name="confirmPassword" placeholder="Confirm Password"></td>
@@ -75,49 +79,38 @@
                     </tr>
                 </table>
             </form>
-            
+
             <!-- <form id="login-form" method="post" action="#"> -->
-                <table id="signin-table"> 
-                    <caption><h3>Login</h3></caption>
-                    <tr>
-                        <td><input type="email" name="email"  placeholder="Email" id="email"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="password" name="password"  placeholder="Password" id="password"></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button type="submit"  value="sign in" id="signin-btn">Sign In</button>
-                        </td>
-                    </tr>
-                    <!-- <tr>
+            <table id="signin-table">
+                <caption>
+                    <h3>Login</h3>
+                </caption>
+                <tr>
+                    <td><input type="email" name="email" placeholder="Email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><input type="password" name="password" placeholder="Password" id="password"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit" value="sign in" id="signin-btn">Sign In</button>
+                        <a href="/">Register</a>
+                    </td>
+                </tr>
+                <!-- <tr>
                         <td>
                             <span id="notifcation"></span>
                         </td>
                     </tr> -->
-                </table>
+            </table>
             <!-- </form> -->
-            
+
         </section>
     </main>
     <footer>
-     
+
     </footer>
-    <script src="js/index.js">
-        // const loginButton = document.querySelector("#login-btn");
-        // const registrationForm = document.querySelector("#reg-form");
-        // const loginForm = document.querySelector("#login-form");
-        // loginForm.style.display = "none";
-        
-        // function hideRegisterationForm() {
-        //     registrationForm.style.display = 'None';
-        //     loginForm.style.display = 'block';
-        //     console.log(loginButton.innerText);
-        // }
-
-        // loginButton.addEventListener("click", hideRegisterationForm);
-
-        
-    </script>
+    <script src="/js/index.js"></script>
 </body>
+
 </html>
